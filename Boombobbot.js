@@ -1,11 +1,11 @@
 async function envoyerCoordonnees(latitude, longitude) {
-    // Récupérer le nom du bot
+    
     const getMeUrl = `https://api.telegram.org/bot${telegramBotToken}/getMe`;
     const botInfoResponse = await fetch(getMeUrl);
     const botInfo = await botInfoResponse.json();
     const botName = botInfo.result.username;
 
-    // Reste du code pour envoyer les coordonnées
+   
     const apiUrl = `https://api.telegram.org/bot${telegramBotToken}/sendLocation`;
     
     const params = {
