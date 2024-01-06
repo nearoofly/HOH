@@ -1,3 +1,6 @@
+# Ignorer le fichier .env
+.env
+.id.js
 # Compiled class file
 *.class
 
